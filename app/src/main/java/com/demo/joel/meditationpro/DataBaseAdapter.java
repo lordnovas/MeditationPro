@@ -43,6 +43,8 @@ public class DataBaseAdapter
 
 
 
+
+
     static class DataBaseHelper extends SQLiteOpenHelper
     {
         private Context context;
@@ -78,7 +80,6 @@ public class DataBaseAdapter
             super(context,DATABASE_NAME,null,DATABASE_VERSION);
             this.context=context;
             Message.message(context, "Inside the DB Helper Constructor");
-
         }
 
         @Override
