@@ -25,11 +25,6 @@ public class DataBaseAdapter
     }
 
 
-    /**
-     * Under Construction:
-     * Adding DataPoints from Array of Integers up next
-     */
-
     public File createCSV(String filename) {
         return currCSVFile = new File(helper.context.getFilesDir(), filename);
     }
