@@ -17,6 +17,7 @@ import java.io.IOException;
 public class DataBaseAdapter
 {
     DataBaseHelper helper;
+    FileOutputStream outputStream;
     File currCSVFile;
 
     public DataBaseAdapter(Context context)
@@ -33,8 +34,9 @@ public class DataBaseAdapter
         this.currCSVFile = currCSVFile;
     }
 
+
     public void addSingleDataPoint(int time, int device_val) {
-        FileOutputStream outputStream;
+
         try {
             outputStream = new FileOutputStream(currCSVFile);
             outputStream.write(time);
